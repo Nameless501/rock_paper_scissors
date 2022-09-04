@@ -18,6 +18,12 @@
     text-rendering: optimizeLegibility;
 }
 
+@media screen and (max-height: 1000px) {
+    .page {
+        height: 85vh;
+    }
+}
+
 @media screen and (max-height: 799px) {
     .page {
         padding: 25px 0 25px;
