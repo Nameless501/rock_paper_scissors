@@ -1,0 +1,15 @@
+.arena__bet {
+    margin: 0;
+    display: block;
+    height: 150px;
+    width: 150px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+@media screen and (max-height: 650px) {
+    .arena__bet {
+        height: 110px;
+        width: 110px;
+    }
+}

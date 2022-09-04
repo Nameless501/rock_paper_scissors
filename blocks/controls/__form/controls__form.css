@@ -1,0 +1,14 @@
+.controls__form{
+    margin: 0;
+    padding: 20px 0 0;
+    border-top: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media screen and (max-height: 650px) {
+    .controls__form {
+        padding-top: 10px;
+    }
+}

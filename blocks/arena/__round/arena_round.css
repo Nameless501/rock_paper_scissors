@@ -1,0 +1,16 @@
+.arena__round {
+    margin: 0;
+    padding: 0;
+    grid-area: round;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    grid-area: round;
+    justify-self: center;
+}
+
+@media screen and (max-height: 650px) {
+    .arena__round {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,12 @@
+.arena__score-counter{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@media screen and (max-height: 650px) {
+    .arena__score-counter {
+        font-size: 20px;;
+    }
+}

@@ -1,283 +1,55 @@
 @import url(../vendor/normalize.css);
 
-.window {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(117, 240, 199);
-    position: relative;
-}
+@import url(../vendor/fonts/fonts.css);
 
-.page {
-    max-width: 1280px;
-    min-width: 320px;
-    max-height: 100vh;
-    margin: 0 auto;
-    padding: 50px 0 50px;
-    font-family: 'Inter', Arial, sans-serif;
-    color: #FFF;
-    box-sizing: border-box;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-}
+/* window and page */
 
-@media screen and (max-width: 1279px) {
-    .page {
-        padding: 30px 0 30px;
-    }
-}
+@import url(../blocks/window/window.css);
 
-@media screen and (max-width: 767px) {
-    .page {
-        padding: 15px 0 15px;
-    }
-}
+@import url(../blocks/page/page.css);
 
-.arena {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-height: 65vh;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-}
+/* arena section */
 
-.arena__round {
-    margin: 0;
-    padding: 0;
-    grid-area: round;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700;
-}
+@import url(../blocks/arena/arena.css);
 
-@media screen and (max-width: 767px) {
-    .arena__round {
-        font-size: 40px;
-    }
-}
+@import url(../blocks/arena/__round/arena_round.css);
 
-.arena__scores {
-    margin: 50px 0 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+@import url(../blocks/arena/__scores/arena__scores.css);
 
-@media screen and (max-width: 1023px) {
-    .arena__scores {
-        margin-top: 25px;
-    }
-}
+@import url(../blocks/arena/__scores-counter/arena__scores-counter.css);
 
-.arena__score-counter{
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-    font-weight: 400;
-}
+@import url(../blocks/arena/__battleground/arena__battleground.css);
 
-@media screen and (max-width: 767px) {
-    .arena__score-counter {
-        font-size: 20px;;
-    }
-}
+@import url(../blocks/arena/__bet/arena__bet.css);
 
-.arena__battleground {
-    margin: 100px 0 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+@import url(../blocks/arena/__bet-icon/arena__bet-icon.css);
 
-@media screen and (max-width: 1023px) {
-    .arena__battleground {
-        margin-top: 70px;
-    }
-}
+/* controls section */
 
-/* @media screen and (max-width: 767px) {
-    .arena__battleground {
-        margin-top: 50px;
-    }
-} */
+@import url(../blocks/controls/controls.css);
 
-.arena__bet {
-    margin: 0;
-    display: block;
-    height: 150px;
-    width: 150px;
-    border: 3px solid white;
-    border-radius: 50%;
-}
+@import url(../blocks/controls/__form/controls__form.css);
 
-@media screen and (max-width: 767px) {
-    .arena__bet {
-        height: 120px;
-        width: 120px;
-    }
-}
+@import url(../blocks/controls/__fieldset/constrols__fieldset.css);
 
-.arena__bet-icon {
-    margin: 0;
-    padding: 0;
-    display: none;
-    max-width: 100%;
-    max-height: 100%;
-}
+@import url(../blocks/controls/__radio/controls__radio.css);
 
-.arena__bet-icon_active {
-    display: block;
-}
+@import url(../blocks/controls/__label/controls__label.css);
 
-.controls {
-    margin: 100px 0 0;
-    padding: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+@import url(../blocks/controls/__label/_type/controls__label_type_paper.css);
 
-@media screen and (max-width: 1023px) {
-    .controls {
-        margin-top: 70px;
-    }
-}
+@import url(../blocks/controls/__label/_type/controls__label_type_rock.css);
 
-/* @media screen and (max-width: 767px) {
-    .controls {
-        margin-top: 50px;
-    }
-} */
+@import url(../blocks/controls/__label/_type/controls__label_type_scissors.css);
 
-.controls__form{
-    margin: 0;
-    padding: 20px 0 0;
-    border-top: 2px solid white;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
+@import url(../blocks/controls/__submit/constrols__submit.css);
 
-.constrols__fieldset {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 0;
-}
+/* Result-popup section */
 
-.controls__radio {
-    margin: 0;
-    padding: 0;
-    display: none;
-}
+@import url(../blocks/result-popup/result-popup.css);
 
-.controls__label {
-    margin: 0;
-    padding: 0;
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+@import url(../blocks/result-popup/_active/result-popup_active.css);
 
-.controls__label:hover {
-    cursor: pointer;
-    opacity: 0.9;
-}
+@import url(../blocks/result-popup/__wrapper/result-popup__wrapper.css);
 
-@media screen and (max-width: 767px) {
-    .controls__label {
-        height: 90px;
-        width: 90px;
-    }
-}
-
-.controls__label_type_rock {
-    background-image: url(../images/rock.png);
-}
-
-.controls__label_type_paper {
-    background-image: url(../images/paper.png);
-}
-
-.controls__label_type_scissors {
-    background-image: url(../images/scissors.png);
-}
-
-.controls__submit {
-    margin: 30px 0 0;
-    padding: 0;
-    border: 0;
-    border-radius: 30%;
-    width: 300px;
-    height: 70px;
-    background-color: transparent;
-    background-image: radial-gradient(rgb(117, 229, 248), transparent);
-    color: white;
-    cursor: pointer;
-    font-size: 30px;
-    align-self: center;
-}
-
-@media screen and (max-width: 767px) {
-    .controls__submit {
-        margin-top: 20px;
-        height: 70px;
-        width: 200px;
-    }
-}
-
-
-.result-popup {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
-.result-popup_active {
-    display: block;
-}
-
-.result-popup__wrapper {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, .6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.result-popup__text {
-    margin: 0;
-    padding: 0;
-    font-size: 50px;
-}
-
-@media screen and (max-width: 767px) {
-    .result-popup__text {
-        font-size: 40px;
-    }
-}
+@import url(../blocks/result-popup/__text/result-popup__text.css);

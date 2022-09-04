@@ -1,0 +1,11 @@
+.arena__battleground {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: bet;
+}

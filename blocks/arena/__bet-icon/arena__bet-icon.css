@@ -1,0 +1,11 @@
+.arena__bet-icon {
+    margin: 0;
+    padding: 0;
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.arena__bet-icon_active {
+    display: block;
+}
