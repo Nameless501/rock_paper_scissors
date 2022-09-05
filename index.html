@@ -9,14 +9,22 @@
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="window">
-    <main class="page">
-        <section class="switch">
-            <label for="switch-mode" class="switch__label">
-                <input type="checkbox" name="switch-mode" id="switch-mode" class="switch__input">
-                <span class="switch__slider"></span>
+    <header class="header">
+        <div class="header__switch">
+            <label for="switch-mode" class="header__switch-label">
+                <input type="checkbox" name="switch-mode" id="switch-mode" class="header__input">
+                <span class="header__switch-slider"></span>
             </label>
-            <h3 class="switch-caption">Extend</h3>
-        </section>
+            <p class="header__caption">Extend</p>
+        </div>
+        <div class="header__rules">
+            <button class="header__button">
+                <div class="header__button-line"></div>
+            </button>
+            <p class="header__caption">Rules</p>
+        </div>
+    </header>
+    <main class="page">
         <section class="arena">
             <h1 class="arena__round">Round: 
                 <span class="arena__round-counter">1</span>
@@ -56,9 +64,15 @@
                 <button type="submit" class="controls__submit">Start</button>
             </form>
         </section>
-        <section class="result-popup">
-            <div class="result-popup__wrapper">
-                <p class="result-popup__text"></p>
+        <section class="popup popup_type_result">
+            <div class="popup__wrapper">
+                <p class="popup__text"></p>
+            </div>
+        </section>
+        <section class="popup popup_type_rules">
+            <div class="popup__wrapper">
+                <img src="./images/rules.png" alt="rules" class="popup__image">
+                <button class="popup__close"></button>
             </div>
         </section>
     </main>

@@ -30,3 +30,9 @@ export const extend = [
 ]
 
 export const controlsForm = document.querySelector('.controls__form');
+
+export const resultPopup = document.querySelector('.popup_type_result');
+
+export const rulesPopup = document.querySelector('.popup_type_rules');
+
+export const rulesButton = document.querySelector('.header__button');

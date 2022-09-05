@@ -1,4 +1,4 @@
-.switch {
+.header__switch {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -11,13 +11,13 @@
 }
 
 @media screen and (max-height: 799px) {
-    .switch {
+    .header__switch {
         top: 30px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .switch {
+    .header__switch {
         left: 10px;
         top: 10px;
         row-gap: 10px;

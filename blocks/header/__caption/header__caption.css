@@ -1,18 +1,19 @@
-.switch-caption {
+.header__caption {
     margin: 0;
     padding: 0;
     display: block;
     font-size: 25px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 767px) {
-    .switch-caption {
+    .header__caption {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .switch-caption {
+    .header__caption {
         font-size: 15px;
     }
 }

@@ -1,7 +1,12 @@
 .window {
-    margin: 0;
-    padding: 0;
-    /* background-color: rgb(117, 240, 199); */
+    max-width: 1280px;
+    min-width: 320px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 50px 0 50px;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #FFF;
+    box-sizing: border-box;
     background-color: rgb(100, 177, 218);
     position: relative;
 }

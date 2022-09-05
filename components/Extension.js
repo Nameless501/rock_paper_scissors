@@ -1,6 +1,6 @@
 export class Extension {
     constructor() {
-        this._extensionCheckbox = document.querySelector('.switch__input');
+        this._extensionCheckbox = document.querySelector('.header__input');
         this._spockButton = document.querySelector('.controls__label_type_spock');
         this._lizardButton = document.querySelector('.controls__label_type_lizard');
     }

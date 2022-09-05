@@ -8,17 +8,25 @@
 
 @import url(../blocks/page/page.css);
 
-/* switch section */
+/* header section */
 
-@import url(../blocks/switch/switch.css);
+@import url(../blocks/header/header.css);
 
-@import url(../blocks/switch/__label/switch__label.css);
+@import url(../blocks/header/__switch/header__switch.css);
 
-@import url(../blocks/switch/__input/switch__input.css);
+@import url(../blocks/header/__switch-label/header__switch-label.css);
 
-@import url(../blocks/switch/__slider/switch__slider.css);
+@import url(../blocks/header/__input/header__input.css);
 
-@import url(../blocks/switch/__caption/switch__caption.css);
+@import url(../blocks/header/__switch-slider/header__switch-slider.css);
+
+@import url(../blocks/header/__caption/header__caption.css);
+
+@import url(../blocks/header/__rules/header__rules.css);
+
+@import url(../blocks/header/__button/header__button.css);
+
+@import url(../blocks/header/__button-line/header__button-line.css);
 
 /* arena section */
 
@@ -66,10 +74,14 @@
 
 /* Result-popup section */
 
-@import url(../blocks/result-popup/result-popup.css);
+@import url(../blocks/popup/popup.css);
 
-@import url(../blocks/result-popup/_active/result-popup_active.css);
+@import url(../blocks/popup/_active/popup_active.css);
 
-@import url(../blocks/result-popup/__wrapper/result-popup__wrapper.css);
+@import url(../blocks/popup/__wrapper/popup__wrapper.css);
 
-@import url(../blocks/result-popup/__text/result-popup__text.css);
+@import url(../blocks/popup/__text/popup__text.css);
+
+@import url(../blocks/popup/__image/popup__image.css);
+
+@import url(../blocks/popup/__close/popup__close.css);

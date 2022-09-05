@@ -1,4 +1,4 @@
-.switch__label {
+.header__switch-label {
     margin: 0 0 0 10px;
     padding: 0;
     display: block;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .switch__label {
+    .header__switch-label {
         margin: 0 0 0 10px;
         width: 40px;
         height: 25px;
@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    .switch__label {
+    .header__switch-label {
         margin: 0;
     }
 }

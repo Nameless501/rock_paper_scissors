@@ -1,16 +1,18 @@
-export class PopupWithResult {
-    constructor() {
-        this._popup = document.querySelector('.result-popup');
-        this.resultText = this._popup.querySelector('.result-popup__text')
+import { Popup } from "./Popup.js";
+
+export class PopupWithResult extends Popup {
+    constructor(popup) {
+        super(popup);
+        this.resultText = this._popup.querySelector('.popup__text')
     }
 
     showResult = (resultText) => {
-        this._popup.classList.add('result-popup_active');
+        this.openPopup();
         this.resultText.textContent = resultText;
     }
 
     hideResult = () => {
-        this._popup.classList.remove('result-popup_active');
+        this._closePopup();
         this.resultText.textContent = '';
     }
 }

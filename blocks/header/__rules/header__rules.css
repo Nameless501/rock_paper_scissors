@@ -1,0 +1,25 @@
+.header__rules {
+    margin: 10px 0 0;
+    padding: 0;
+    position: absolute;
+    top: 65px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+}
+
+@media screen and (max-height: 799px) {
+    .header__rules {
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__rules {
+        right: 10px;
+        top: 10px;
+        row-gap: 5px;
+    }
+}
