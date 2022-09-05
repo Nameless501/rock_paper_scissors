@@ -1,0 +1,7 @@
+.controls__submit_disabled {
+    opacity: .4;
+}
+
+.controls__submit_disabled:hover {
+    box-shadow: 0 0 0;
+}

@@ -14,7 +14,7 @@
 .controls__label:hover {
     cursor: pointer;
     opacity: 0.9;
-    box-shadow: 0 0 10px 3px rgb(117, 229, 248);
+    box-shadow: 0 0 10px 3px rgb(202, 222, 233);
 }
 
 @media screen and (max-height: 650px) {

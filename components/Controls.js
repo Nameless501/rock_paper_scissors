@@ -20,6 +20,8 @@ export class Controls {
             evt.preventDefault();
 
             this._submitHandler(this._getBetData());
+
+            this._form.reset();
         })
     }
 

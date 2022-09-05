@@ -19,10 +19,12 @@ export class Validation {
 
     _disableSubmitButton = () => {
         this._submitButton.setAttribute('disabled', true);
+        this._submitButton.classList.add('controls__submit_disabled');
     }
 
     _activateSubmitButton = () => {
         this._submitButton.removeAttribute('disabled');
+        this._submitButton.classList.remove('controls__submit_disabled');
     }
 
     clearValidation = () => {

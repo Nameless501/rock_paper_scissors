@@ -2,21 +2,25 @@
     margin: 30px 0 0;
     padding: 0;
     border: 0;
-    border-radius: 30%;
+    border-radius: 10px;
     width: 300px;
-    height: 70px;
-    background-color: transparent;
-    background-image: radial-gradient(rgb(117, 229, 248), transparent);
+    height: 60px;
+    background-color: rgb(102, 168, 169);
+    border: 5px solid rgb(59, 101, 114);
     color: white;
     cursor: pointer;
     font-size: 30px;
     align-self: center;
 }
 
+.controls__submit:hover {
+    box-shadow: 0 0 10px 3px rgb(202, 222, 233);
+}
+
 @media screen and (max-height: 650px) {
     .controls__submit {
         margin-top: 15px;
-        height: 50px;
+        height: 40px;
         width: 200px;
     }
 }

@@ -42,7 +42,9 @@
 
 @import url(../blocks/controls/__label/_type/controls__label_type_scissors.css);
 
-@import url(../blocks/controls/__submit/constrols__submit.css);
+@import url(../blocks/controls/__submit/controls__submit.css);
+
+@import url(../blocks/controls/__submit/_disabled/controls__submit_disabled.css);
 
 /* Result-popup section */
 
