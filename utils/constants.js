@@ -1,17 +1,17 @@
 export const config = [
     {
         name: 'rock',
-        img: './images/rock.png',
+        img: './images/rock.jpg',
         beat: 'scissors'
     },
     {
         name: 'paper',
-        img: './images/paper.png',
+        img: './images/paper.jpg',
         beat: 'rock'
     },
     {
         name: 'scissors',
-        img: './images/scissors.png',
+        img: './images/scissors.jpg',
         beat: 'paper'
     }
 ];
