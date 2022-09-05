@@ -8,6 +8,18 @@
 
 @import url(../blocks/page/page.css);
 
+/* switch section */
+
+@import url(../blocks/switch/switch.css);
+
+@import url(../blocks/switch/__label/switch__label.css);
+
+@import url(../blocks/switch/__input/switch__input.css);
+
+@import url(../blocks/switch/__slider/switch__slider.css);
+
+@import url(../blocks/switch/__caption/switch__caption.css);
+
 /* arena section */
 
 @import url(../blocks/arena/arena.css);
@@ -41,6 +53,12 @@
 @import url(../blocks/controls/__label/_type/controls__label_type_rock.css);
 
 @import url(../blocks/controls/__label/_type/controls__label_type_scissors.css);
+
+@import url(../blocks/controls/__label/_type/controls__label_type_lizard.css);
+
+@import url(../blocks/controls/__label/_type/controls__label_type_spock.css);
+
+@import url(../blocks/controls/__label/_disabled/controls__label_disabled.css);
 
 @import url(../blocks/controls/__submit/controls__submit.css);
 

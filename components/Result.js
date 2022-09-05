@@ -14,13 +14,17 @@ export class Result {
 
         if(userBet.name === opponentBet.name) {
             this._result = 'Draw';
-        } else if(userBet.beat === opponentBet.name) {
+        } else if(this._isBeat(userBet, opponentBet)) {
             this._result = 'You win!';
-        } else if(userBet.name === opponentBet.beat) {
+        } else if(this._isBeat(opponentBet, userBet)) {
             this._result = 'You lose';
         }
 
         return this._result;
+    }
+
+    _isBeat = (firstBet, secondBet) => {
+        return firstBet.beat.find(item => item === secondBet.name) ? true : false;
     }
 
     setResult = (userBet) => {

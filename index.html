@@ -10,6 +10,13 @@
 </head>
 <body class="window">
     <main class="page">
+        <section class="switch">
+            <label for="switch-mode" class="switch__label">
+                <input type="checkbox" name="switch-mode" id="switch-mode" class="switch__input">
+                <span class="switch__slider"></span>
+            </label>
+            <h3 class="switch-caption">Extend</h3>
+        </section>
         <section class="arena">
             <h1 class="arena__round">Round: 
                 <span class="arena__round-counter">1</span>
@@ -30,10 +37,19 @@
         <section class="controls">
             <form action="" class="controls__form" novalidate>
                 <fieldset class="constrols__fieldset">
+                    <!--rock-->
                     <input type="radio" id="rock" name="radio" value="rock" class="controls__radio" required>
                     <label for="rock" class="controls__label controls__label_type_rock"></label>
+                    <!--lizard-->
+                    <input type="radio" id="lizard" name="radio" value="lizard" class="controls__radio">
+                    <label for="lizard" class="controls__label controls__label_type_lizard controls__label_group_extended"></label>
+                    <!--paper-->
                     <input type="radio" id="paper" name="radio" value="paper" class="controls__radio">
                     <label for="paper" class="controls__label controls__label_type_paper"></label>
+                    <!--spock-->
+                    <input type="radio" id="spock" name="radio" value="spock" class="controls__radio">
+                    <label for="spock" class="controls__label controls__label_type_spock controls__label_group_extended"></label>
+                    <!--scissors-->
                     <input type="radio" id="scissors" name="radio" value="scissors" class="controls__radio">
                     <label for="scissors" class="controls__label controls__label_type_scissors"></label>
                 </fieldset>

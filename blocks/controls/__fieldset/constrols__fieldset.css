@@ -6,3 +6,10 @@
     justify-content: space-around;
     border: 0;
 }
+
+@media screen and (max-width: 767px) {
+    .constrols__fieldset {
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+}

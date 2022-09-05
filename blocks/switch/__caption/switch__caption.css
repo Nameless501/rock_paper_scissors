@@ -1,0 +1,13 @@
+.switch-caption {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 450px) {
+    .switch-caption {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+}

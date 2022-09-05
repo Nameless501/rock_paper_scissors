@@ -2,6 +2,8 @@
 
 import { Controls } from '../components/Controls.js';
 
+import { Extension } from '../components/Extension.js';
+
 import { PopupWithResult } from '../components/PopupWithResult.js';
 
 import { Result } from '../components/Result.js';
@@ -10,7 +12,7 @@ import { Score } from '../components/Score.js';
 
 import { Validation } from '../components/Validation.js';
 
-import { config, controlsForm } from '../utils/constants.js';
+import { config, extend, controlsForm } from '../utils/constants.js';
 
 import { handleIconData } from '../utils/utils.js';
 
@@ -44,6 +46,12 @@ const controls = new Controls(
         )
     }
 )
+
+const extension = new Extension();
+
+extension.toggleButtonsState(false);
+
+extension.setEventListeners(config, extend)
 
 controls.setEventListeners();
 
