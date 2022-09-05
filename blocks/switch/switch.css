@@ -20,12 +20,6 @@
     .switch {
         left: 10px;
         top: 10px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .switch {
-        flex-direction: row;
-        column-gap: 20px;
+        row-gap: 10px;
     }
 }

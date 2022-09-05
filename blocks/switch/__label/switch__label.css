@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 767px) {
     .switch__label {
-        margin: 0 0 0 15px;
+        margin: 0 0 0 10px;
         width: 40px;
         height: 25px;
         border-radius: 25px;
