@@ -24,7 +24,7 @@ export const extend = [
     },
     {
         name: 'spock',
-        img: './images/spock.jpg',
+        img: './images/spock-side.png',
         beat: ['scissors', 'rock']
     }
 ]
