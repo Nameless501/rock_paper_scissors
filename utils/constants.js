@@ -1,17 +1,17 @@
 export const config = [
     {
         name: 'rock',
-        img: './images/rock.jpg',
+        img: './images/rock-side.png',
         beat: ['scissors', 'lizard']
     },
     {
         name: 'paper',
-        img: './images/paper.jpg',
+        img: './images/paper-side.png',
         beat: ['rock', 'spock']
     },
     {
         name: 'scissors',
-        img: './images/scissors.jpg',
+        img: './images/scissors-side.png',
         beat: ['paper', 'lizard']
     }
 ];
@@ -19,7 +19,7 @@ export const config = [
 export const extend = [
     {
         name: 'lizard',
-        img: './images/lizard.jpg',
+        img: './images/lizard-side.png',
         beat: ['spock', 'paper']
     },
     {
