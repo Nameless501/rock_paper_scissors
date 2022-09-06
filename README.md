@@ -20,4 +20,4 @@ ___
 ___
  __Ссылка на игру под камнем__
 
-[![Камень](./images/icon.png)](https://nameless501.github.io/rock_paper_scissors/)
+[<img width="350px" alt="rock" src="./images/icon.png">](https://nameless501.github.io/rock_paper_scissors/)
