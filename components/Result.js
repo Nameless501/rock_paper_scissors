@@ -30,7 +30,7 @@ export class Result {
     setResult = (userBet) => {
         const randomData = this._getRandomData();
 
-        this._handleBetIcon(randomData, this._opponentBetIcon);
+        this._handleBetIcon(randomData, this._opponentBetIcon, false);
 
         return this._getResult(userBet, randomData);
     }
