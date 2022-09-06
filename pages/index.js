@@ -5,6 +5,7 @@ import { Controls } from '../components/Controls.js';
 import { Extension } from '../components/Extension.js';
 
 import { PopupWithResult } from '../components/PopupWithResult.js';
+
 import { PopupWithRules } from '../components/PopupWithRules.js';
 
 import { Result } from '../components/Result.js';

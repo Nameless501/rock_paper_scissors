@@ -8,6 +8,8 @@
 
 @import url(../blocks/page/page.css);
 
+@import url(../blocks/main/main.css);
+
 /* header section */
 
 @import url(../blocks/header/header.css);
@@ -41,6 +43,8 @@
 @import url(../blocks/arena/__battleground/arena__battleground.css);
 
 @import url(../blocks/arena/__bet/arena__bet.css);
+
+@import url(../blocks/arena/__bet-caption/arena__bet-caption.css);
 
 @import url(../blocks/arena/__bet-icon/arena__bet-icon.css);
 

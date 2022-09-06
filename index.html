@@ -9,73 +9,77 @@
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="window">
-    <header class="header">
-        <div class="header__switch">
-            <label for="switch-mode" class="header__switch-label">
-                <input type="checkbox" name="switch-mode" id="switch-mode" class="header__input">
-                <span class="header__switch-slider"></span>
-            </label>
-            <p class="header__caption">Extend</p>
-        </div>
-        <div class="header__rules">
-            <button class="header__button">
-                <div class="header__button-line"></div>
-            </button>
-            <p class="header__caption">Rules</p>
-        </div>
-    </header>
-    <main class="page">
-        <section class="arena">
-            <h1 class="arena__round">Round: 
-                <span class="arena__round-counter">1</span>
-            </h1>
-            <ul class="arena__scores">
-                <li class="arena__score-counter arena__score-counter_type_user">0</li>
-                <li class="arena__score-counter arena__score-counter_type_opponent">0</li>
-            </ul>
-            <ul class="arena__battleground">
-                <li class="arena__bet">
-                    <img src="#" alt="#" class="arena__bet-icon arena__bet-icon_type_user">
-                </li>
-                <li class="arena__bet">
-                    <img src="#" alt="#" class="arena__bet-icon arena__bet-icon_type_opponent">
-                </li>
-            </ul>
-        </section>
-        <section class="controls">
-            <form action="" class="controls__form" novalidate>
-                <fieldset class="constrols__fieldset">
-                    <!--rock-->
-                    <input type="radio" id="rock" name="radio" value="rock" class="controls__radio" required>
-                    <label for="rock" class="controls__label controls__label_type_rock"></label>
-                    <!--lizard-->
-                    <input type="radio" id="lizard" name="radio" value="lizard" class="controls__radio">
-                    <label for="lizard" class="controls__label controls__label_type_lizard controls__label_group_extended"></label>
-                    <!--paper-->
-                    <input type="radio" id="paper" name="radio" value="paper" class="controls__radio">
-                    <label for="paper" class="controls__label controls__label_type_paper"></label>
-                    <!--spock-->
-                    <input type="radio" id="spock" name="radio" value="spock" class="controls__radio">
-                    <label for="spock" class="controls__label controls__label_type_spock controls__label_group_extended"></label>
-                    <!--scissors-->
-                    <input type="radio" id="scissors" name="radio" value="scissors" class="controls__radio">
-                    <label for="scissors" class="controls__label controls__label_type_scissors"></label>
-                </fieldset>
-                <button type="submit" class="controls__submit">Start</button>
-            </form>
-        </section>
-        <section class="popup popup_type_result">
-            <div class="popup__wrapper">
-                <p class="popup__text"></p>
+    <div class="page">
+        <header class="header">
+            <div class="header__switch">
+                <label for="switch-mode" class="header__switch-label">
+                    <input type="checkbox" name="switch-mode" id="switch-mode" class="header__input">
+                    <span class="header__switch-slider"></span>
+                </label>
+                <p class="header__caption">Extend</p>
             </div>
-        </section>
-        <section class="popup popup_type_rules">
-            <div class="popup__wrapper">
-                <img src="./images/rules.png" alt="rules" class="popup__image">
-                <button class="popup__close"></button>
+            <div class="header__rules">
+                <button class="header__button">
+                    <div class="header__button-line"></div>
+                </button>
+                <p class="header__caption">Rules</p>
             </div>
-        </section>
-    </main>
+        </header>
+        <main class="main">
+            <section class="arena">
+                <h1 class="arena__round">Round: 
+                    <span class="arena__round-counter">1</span>
+                </h1>
+                <ul class="arena__scores">
+                    <li class="arena__score-counter arena__score-counter_type_user">0</li>
+                    <li class="arena__score-counter arena__score-counter_type_opponent">0</li>
+                </ul>
+                <ul class="arena__battleground">
+                    <li class="arena__bet">
+                        <p class="arena__bet-caption">You</p>
+                        <img src="#" alt="#" class="arena__bet-icon arena__bet-icon_type_user">
+                    </li>
+                    <li class="arena__bet">
+                        <p class="arena__bet-caption">Opponent</p>
+                        <img src="#" alt="#" class="arena__bet-icon arena__bet-icon_type_opponent">
+                    </li>
+                </ul>
+            </section>
+            <section class="controls">
+                <form action="" class="controls__form" novalidate>
+                    <fieldset class="constrols__fieldset">
+                        <!--rock-->
+                        <input type="radio" id="rock" name="radio" value="rock" class="controls__radio" required>
+                        <label for="rock" class="controls__label controls__label_type_rock"></label>
+                        <!--lizard-->
+                        <input type="radio" id="lizard" name="radio" value="lizard" class="controls__radio">
+                        <label for="lizard" class="controls__label controls__label_type_lizard controls__label_group_extended"></label>
+                        <!--paper-->
+                        <input type="radio" id="paper" name="radio" value="paper" class="controls__radio">
+                        <label for="paper" class="controls__label controls__label_type_paper"></label>
+                        <!--spock-->
+                        <input type="radio" id="spock" name="radio" value="spock" class="controls__radio">
+                        <label for="spock" class="controls__label controls__label_type_spock controls__label_group_extended"></label>
+                        <!--scissors-->
+                        <input type="radio" id="scissors" name="radio" value="scissors" class="controls__radio">
+                        <label for="scissors" class="controls__label controls__label_type_scissors"></label>
+                    </fieldset>
+                    <button type="submit" class="controls__submit">Start</button>
+                </form>
+            </section>
+            <section class="popup popup_type_result">
+                <div class="popup__wrapper">
+                    <p class="popup__text"></p>
+                </div>
+            </section>
+            <section class="popup popup_type_rules">
+                <div class="popup__wrapper">
+                    <img src="./images/rules.png" alt="rules" class="popup__image">
+                    <button class="popup__close"></button>
+                </div>
+            </section>
+        </main>
+    </div>
     <script type="module" src="./pages/index.js"></script>
 </body>
 </html>

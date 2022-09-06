@@ -1,0 +1,12 @@
+.arena__bet-caption {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-size: 25px;
+}
+
+@media screen and (max-height: 767px) {
+    .arena__bet-caption {
+        font-size: 20px;
+    }
+}

@@ -3,24 +3,30 @@ import { Popup } from "./Popup.js";
 export class PopupWithRules extends Popup {
     constructor(popup) {
         super(popup);
-        this._bindedHandleEscape = this._handleEscape.bind(this);
+        this._handleEscapeClose = this._handleEscapeClose.bind(this);
     }
 
     setEventListeners = () => {
-        this._closeButton = this._popup.querySelector('.popup__close');
+        this._popup.addEventListener('click', (evt) => this._handleClose(evt))
 
-        this._closeButton.addEventListener('click', () => this._closePopup());
-
-        //document.addEventListener('keydown', this._bindedHandleEscape)
+        window.addEventListener('keydown', this._handleEscapeClose);
     }
 
-    _handleEscape(evt) {
+    _handleEscapeClose(evt) {
         if(evt.key === 'Escape') {
             this._closePopup();
         }
     }
 
+    _handleClose(evt) {
+        if (evt.target.classList.contains('popup_active') || evt.target.classList.contains('popup__close')) {
+            this._closePopup();
+        }
+    }
+
     _closePopup() {
+        super._closePopup();
         
+        document.removeEventListener('keydown', this._handleEscClose);
     }
 }

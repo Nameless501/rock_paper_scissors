@@ -49,7 +49,7 @@
         height: 20px;
     }
 
-    .switch__input:checked ~ .header__switch-slider::after {
+    .header__input:checked ~ .header__switch-slider::after {
         transform: translateX(19px);
     }
 }

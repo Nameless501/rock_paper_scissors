@@ -19,7 +19,20 @@
 
 @media screen and (max-height: 650px) {
     .controls__label {
-        height: 80px;
-        width: 80px;
+        height: 85px;
+        width: 85px;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .controls__label {
+        height: 85px;
+        width: 85px;
+        margin-left: 20px;
+    }
+
+    .controls__label:first-of-type {
+        margin-left: 0;
+    }
+
 } 

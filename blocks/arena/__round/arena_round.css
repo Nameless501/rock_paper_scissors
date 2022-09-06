@@ -14,3 +14,9 @@
         font-size: 40px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .arena__round {
+        font-size: 40px;
+    }
+}
