@@ -18,6 +18,11 @@ ___
 
 
 ___
- __Ссылка на игру под камнем__
+**<p align="center">Ссылка на игру под камнем</p>**
 
-[<img width="350px" alt="rock" src="./images/icon.png">](https://nameless501.github.io/rock_paper_scissors/)
+<div align="center">
+  <a href="https://nameless501.github.io/rock_paper_scissors/">
+    <img width="350px" alt="rock" src="./images/icon.png">
+  </a>
+</div>
+
